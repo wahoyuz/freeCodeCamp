@@ -10,5 +10,5 @@
 |  5. | **Personal Portfolio** | [freeCodeCamp/personal-portfolio](https://wahyupriambodo.github.io/freecodecamp/personal-portfolio-webpage/ "Click to visit.") |
 
 ### `Certificate of Completion`
-![wahoyuz-fcc-responsive-web-design](https://github.com/wahoyuz/fcc/wahoyuz-fcc-responsive-web-design.png?raw=true)
+![wahoyuz-fcc-responsive-web-design](https://github.com/wahoyuz/freeCodeCamp/blob/main/wahoyuz-fcc-responsive-web-design.png?raw=true)\
 [View certificate:](https://www.freecodecamp.org/certification/wahyupriambodo/responsive-web-design)
