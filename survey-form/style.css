@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --body-color: rgb(34,39,46);
+    --border-container-color: rgb(68,76,86);
+    --button-background-color: rgb(55,175,101);
+    --font-face: Poppins, sans-serif;
+    --darker-text-color: rgb(164,177,189);
+    --default-text-color: rgb(173,186,199);
+    --title-text-color: rgb(205,217,229);
+}
+
+body {
+    font-family: var(--font-face);
+    background-color: var(--body-color);
+    color: var(--default-text-color);
+}
+
+header {
+    margin: 30px auto 25px;
+    text-align: center;
+}
+
+header h1#title {
+    color: var(--title-text-color);
+    margin-bottom: 5px;
+}
+
+header p#description {
+    color: var(--darker-text-color);
+    font-style: italic;
+}
+
+header, .container {
+    width: 700px;
+}
+
+@media only screen and (max-width: 710px) {
+    header, .container {
+        max-width: 96%; /* Always 96% relative on screen readers if width less than or equals to 710px*/
+    }
+}
+
+.container {
+    margin: 0 auto 25px;
+    padding: 30px;
+    border: 2px solid var(--border-container-color);
+    border-radius: 5px;
+}
+
+.container #survey-form label.title-input {
+    display: block;
+    color: var(--title-text-color);
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.container #survey-form input, select, textarea {
+    border: 2.5px solid var(--border-container-color);
+    border-radius: 6px;
+    font-family: inherit;
+    outline: none; /* Removing default focus outline */
+}
+
+.container #survey-form input:focus, select:focus, textarea:focus {
+    box-shadow: 0 0 2px 2px rgba(57, 211, 83, 0.8);
+    border-color: var(--button-background-color);
+}
+
+.container #survey-form input,select,textarea,button {
+    margin-bottom: 12px;
+}
+
+.container #survery-form .recommendation-div:focus, .improvement-div:focus {
+    box-shadow: 0 0 2px 2px rgba(57, 211, 83, 0.8);
+    border-radius: 6px;
+}
+
+.container #survey-form .recommendation-div, .improvement-div {
+    padding: 5px 10px;
+    outline: none;
+}
+
+.container #survey-form .recommendation-div label, .improvement-div label {
+    color: rgb(198,199,200);
+    font-weight: 200;
+}
+
+.container #survey-form .recommendation-div input[type=radio], .improvement-div input[type=checkbox] {
+    -webkit-transform: scale(1.1); /* Chrome, Safari, Opera old version */
+    -moz-transform: scale(1.1); /* Mozilla Firefox */
+    -ms-transform: scale(1.1); /* Internet Explorer */
+    -o-transform: scale(1.1); /* Opera Old Version */
+        transform: scale(1.1);
+    margin-right: 6px;
+}
+
+.container #survey-form .width {
+    width: 100%;
+    padding: 7px;
+}
+
+.container #survey-form .font-size {
+    font-size: 1rem;
+}
+
+.container #survey-form span {
+    color: var(--darker-text-color);
+    font-size: 14px;
+}
+
+
+.container #survey-form textarea {
+    font: inherit;
+    border-radius: 3px;
+}
+
+.container #survey-form #submit {
+    position: relative;
+    text-align: center;
+    padding: 10px;
+    border: 2px solid var(--border-container-color);
+    cursor: pointer;
+    border-radius: 4px;
+    background-color: var(--button-background-color);
+    font-family: inherit;
+    font-size: 15.2px;
+    font-size: .95rem;
+    color: rgb(255,255,255);
+    overflow: hidden; /* For backup */
+}
+
+.container #survey-form #submit:after {
+    content: '';
+    width: 2px;
+    height: 3.5px;
+    background-color: inherit; /* Button background-color */
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    -webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -ms-transition: all 0.8s;
+    -o-transition: all 0.8s;
+        transition: all 0.8s;
+}
+
+.container #survey-form #submit:hover:after {
+    -webkit-transform: scaleX(317); /* Chrome, Safari, Opera old version */
+    -moz-transform: scaleX(317); /* Mozilla Firefox */
+    -ms-transform: scaleX(317); /* Internet Explorer */
+    -o-transform: scaleX(317); /* Opera Old Version */
+        transform: scaleX(317);
+    background-color: rgb(70, 245, 200);
+}

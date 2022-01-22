@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+    crossorigin="anonymous">
+    <title>FCC: Product Landing Page</title>
+</head>
+<body>
+    <main>
+        <header id="header" tabindex="1">
+            <div class="header-div" tabindex="2">
+                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTIiIHhtbDpzcGFjZT0icHJlc2VydmUiIGNsYXNzPSIiPjxnPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgoJPGc+CgkJPHBhdGggZD0iTTQ2MC44LDI2Ny4zNzhoLTczLjk1NlYxMzYuNTMzaC0zNC4xMzN2MzEuOTkyYy0zNi4wNjMsOC4yOTItMTM4LjY1OCwzMC41ODYtMTk5LjExMSwzMC41ODZINTEuMiAgICBjLTI4LjIzMiwwLTUxLjIsMjIuOTY3LTUxLjIsNTEuMmMwLDI4LjIzMywyMi45NjgsNTEuMiw1MS4yLDUxLjJoMTg3LjczM3YzNC4xMzNoLTI4LjQ0NHYtNS42ODloLTQ1LjUxMXY0NS41MTFoNDUuNTExdi01LjY4OSAgICBINDYwLjhjMjguMjMyLDAsNTEuMi0yMi45NjcsNTEuMi01MS4yQzUxMiwyOTAuMzQ1LDQ4OS4wMzIsMjY3LjM3OCw0NjAuOCwyNjcuMzc4eiBNNjguMjY3LDI2Ny4zNzhINTEuMiAgICBjLTkuNDExLDAtMTcuMDY3LTcuNjU2LTE3LjA2Ny0xNy4wNjdjMC05LjQxMSw3LjY1Ni0xNy4wNjcsMTcuMDY3LTE3LjA2N2gxNy4wNjdWMjY3LjM3OHogTTEyNS4xNTYsMjY3LjM3OEgxMDIuNHYtMzQuMTMzaDIyLjc1NiAgICBWMjY3LjM3OHogTTE1OS4yODksMjY3LjM3OHYtMzQuMDY1YzYwLjk3NiwxLjI5NCwxNTguNDU4LDIyLjQ4MiwxOTMuNDIyLDMwLjUxOXYzLjU0N0gxNTkuMjg5eiBNMjk1LjgyMiwzMzUuNjQ0aC0yMi43NTZ2LTM0LjEzMyAgICBoMjIuNzU2VjMzNS42NDR6IE00NjAuOCwzMzUuNjQ0SDMyOS45NTZ2LTM0LjEzM0g0NjAuOGM5LjQxMSwwLDE3LjA2Nyw3LjY1NSwxNy4wNjcsMTcuMDY3ICAgIEM0NzcuODY3LDMyNy45OSw0NzAuMjExLDMzNS42NDQsNDYwLjgsMzM1LjY0NHoiIGZpbGw9IiNmZmZmZmYiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIHN0eWxlPSIiIGNsYXNzPSIiPjwvcGF0aD4KCTwvZz4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8L2c+PC9zdmc+" id="header-img"/>
+                <p id="img-title">Original Trombones</p>
+            </div>
+            <nav tabindex="3" id="nav-bar" class="cf">
+                <ul>
+                    <li tabindex="4" class="nav-link"><a href="#features">Features</a></li>
+                    <li tabindex="5" class="nav-link"><a href="#how_it_works">How It Works</a></li>
+                    <li tabindex="6" class="nav-link"><a href="#pricing">Pricing</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="container">
+            <section id="how_it_works">
+                <iframe tabindex="7" width="560" height="315" src="https://www.youtube.com/embed/y8Yv4pnO7qc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </section>
+            <form action="https://www.freecodecamp.com/email-submit" method="POST" id="form">
+                <h1>Handcrafted, home-made masterpieces</h1>
+                <input tabindex="8" type="email" id="email" placeholder="Enter your email address" title="Please enter your email correctly!" required>
+                <button tabindex="9" id="submit" type="submit">GET STARTED</button>
+            </form>
+            <section id="features">
+                <div tabindex="10" class="premium-features">
+                    <i class="fa fa-3x fa-fire"></i>
+                    <div class="description">
+                        <h2>Premium Materials</h2>
+                        <p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.</p>
+                    </div>
+                </div>
+                <div tabindex="11" class="fast_shipping_features">
+                    <i class="fa fa-3x fa-truck"></i>
+                    <div class="description">
+                        <h2>Fast Shipping</h2>
+                        <p>We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.</p>
+                    </div>
+                </div>
+                <div tabindex="12" class="quality_assurance">
+                    <i class="fa fa-3x fa-battery-full"></i>
+                    <div class="description">
+                        <h2>Quality Assurance</h2>
+                        <p>For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.</p>
+                    </div>
+                </div>
+            </section>
+            <section id="pricing">
+                <div tabindex="13" id="tenor-trombone">
+                    <h2>Tenor Trombone</h2>
+                    <div id="tenor-description">
+                        <h3>$600</h3>
+                        <p>Lorem ipsum.</p>
+                        <p>Lorem ipsum.</p>
+                        <p>Lorem ipsum dolor.</p>
+                        <p>Lorem ipsum.</p>
+                        <button class="button" type="button">SELECT</button>
+                    </div>
+                </div>
+                <div tabindex="14" id="bass-trombone">
+                    <h2>Bass Trombone</h2>
+                    <div id="bass-description">
+                        <h3>$900</h3>
+                        <p>Lorem ipsum.</p>
+                        <p>Lorem ipsum.</p>
+                        <p>Lorem ipsum dolor.</p>
+                        <p>Lorem ipsum.</p>
+                        <button class="button" type="button">SELECT</button>
+                    </div>
+                </div>
+                <div tabindex="15" id="valve-trombone">
+                    <h2>Valve Trombone</h2>
+                    <div id="valve-description">
+                        <h3>$1200</h3>
+                        <p>Plays similar to a Trumpet</p>
+                        <p>Great for Jazz Bands</p>
+                        <p>Lorem ipsum dolor.</p>
+                        <p>Lorem ipsum.</p>
+                        <button class="button" type="button">SELECT</button>
+                    </div>
+                </div>
+            </section>
+            <footer>
+                <div tabindex="16" class="footer-link">
+                    <ul>
+                        <li tabindex="17"><a href="#" target="_blank">Privacy</a></li>
+                        <li tabindex="18"><a href="#" target="_blank">Terms</a></li>
+                        <li tabindex="19"><a href="#" target="_blank">Contact</a></li>
+                    </ul>
+                </div>
+                <p tabindex="20" class="copyright">Copyright 2016, Original Trombones</p>
+            </footer>
+        </div>
+    </main>
+</body>
+</html>

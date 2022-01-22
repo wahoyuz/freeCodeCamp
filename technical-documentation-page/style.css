@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --body-color: rgb(28,30,41);
+    --header-color: rgb(51,53,75);
+    --border-container-color: rgb(68,76,86);
+    --font-face: Poppins, sans-serif;
+    --darker-text-color: rgb(164,177,189);
+    --default-text-color: rgb(173,186,199);
+    --title-text-color: rgb(205,217,229);
+    --link-text-color: rgb(0,231,231);
+}
+
+body {
+    font-family: var(--font-face);
+    background-color: var(--body-color);
+    color: var(--default-text-color);
+}
+
+header {
+    font-size: 28.8px;
+    font-size: 1.8rem;
+    font-family: monospace;
+}
+
+#navbar{
+    width: 300px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    border-right: 2.5px solid rgb(144, 157, 171);
+}
+
+#navbar > header {
+    text-align: center;
+    font-weight: lighter;
+    color: var(--title-text-color);
+    background-color: var(--header-color);
+    padding: 15px 10px;
+}
+
+#navbar > header:hover {
+    background-color: rgb(70,78,88);
+}
+
+#navbar > ul {
+    height: 80%;
+    overflow-y: auto;
+}
+
+#navbar > ul > li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-top: 1.5px solid var(--border-container-color);
+    height: 50px;
+}
+
+#navbar > ul > li:last-child {
+    border-bottom: 1.5px solid var(--border-container-color);
+}
+
+#navbar > ul > li > .nav-link {
+    color: var(--default-text-color);
+    text-decoration: none;
+}
+
+#navbar > ul > li > .nav-link:hover {
+    color: var(--link-text-color);
+}
+
+#main-doc {
+    margin-left: 320px;
+    padding: 35px 40px 30px 20px;
+}
+
+#introduction > article > ul, #what_you_should_already_know > article > ul {
+    margin-left: 40px;
+    padding: 10px;
+}
+
+#introduction > article > ul > li, #what_you_should_already_know > article > ul > li {
+    margin-bottom: 15px;
+    list-style-type: square;
+}
+
+#declaring_variables > article > ul > li {
+    list-style-type: none;
+}
+
+#main-doc > section > header {
+    position: relative;
+    color: var(--title-text-color);
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+}
+
+#main-doc > section > header:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: .1px;
+    height: 2px;
+    border-radius: 10px;
+    background-color: var(--body-color);
+    -webkit-transition: all .7s ease-out;
+        transition: all .7s ease-out;
+}
+
+#main-doc > section > header:hover:before {
+    width: 100%;
+    background-color: lawngreen;
+}
+
+p {
+    margin: 15px;
+    color: var(--darker-text-color);
+}
+
+code {
+    display: block;
+    font-size: 15.2px;
+    font-size: .95rem;
+    font-family: "Source Code Pro";
+    margin-left: 25px;
+    padding: 15px;
+    border: 2px solid rgb(144, 157, 171);
+    border-radius: 3px;
+    overflow-x: auto;
+    background-color: rgb(53,55,80);
+    color: rgb(205,217,229);
+}
+
+@media only screen and (max-width: 800px) {
+    #navbar {
+        position: absolute;
+        width: 100%;
+        max-height: 275px;
+        border: 2px solid rgb(144, 157, 171);
+    }
+
+    #navbar > ul {
+        max-height: 210px;
+    }
+
+    #navbar > ul > li {
+        height: 45px;
+    }
+
+    #main-doc {
+        margin: 255px auto 0;
+        padding: 35px 30px 30px 25px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    #main-doc > #what_you_should_already_know > header {
+        width: 100%;
+    }
+}

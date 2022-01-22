@@ -1,0 +1,366 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --body-color: rgb(28,30,41);
+    --header-color: rgb(51,53,75);
+    --border-container-color: rgb(68,76,86);
+    --border-background-color: rgb(55,175,101);
+    --font-face: Poppins, sans-serif;
+    --darker-text-color: rgb(164,177,189);
+    --default-text-color: rgb(173,186,199);
+    --title-text-color: rgb(205,217,229);
+    --link-text-color: rgb(0,231,231);
+}
+
+body {
+    font-family: var(--font-face);
+    background-color: var(--body-color);
+    color: var(--default-text-color);
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    padding: 20px;
+    background-color: var(--header-color);
+    outline: none;
+    z-index: 9999;
+    overflow-x: hidden;
+    box-shadow: 0 1px 5px 4px rgba(0,0,0,0.4);
+}
+
+header:after {
+    content: '';
+    width: 2px;
+    height: 3px;
+    background-color: inherit;
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    -webkit-transition: all 2s;
+    -moz-transition: all 2s;
+    -o-transition: all 2s;
+    -ms-transition: all 2s;
+        transition: all 2s;
+}
+
+header:focus:after {
+    -webkit-transform: scaleX(1000);
+    -moz-transform: scaleX(1000);
+    -o-transform: scaleX(1000);
+    -ms-transform: scaleX(1000);
+            transform: scaleX(1000);
+    background-color: var(--border-background-color);
+}
+
+header > .header-div {
+    position: absolute;
+    top: 20px;
+    bottom: 20px;
+}
+
+header > .header-div > #header-img {
+    margin-top: -10px;
+    height: 50px;
+}
+
+header > .header-div > #img-title {
+    margin-top: -50px;
+    margin-left: 60px;
+    font-weight: bolder;
+    font-size: 24px;
+    font-size: 1.5rem;
+    color: var(--title-text-color);
+}
+
+header > nav {
+    float: right;
+}
+
+header > nav > ul > .nav-link {
+    display: inline-block;
+    list-style-type: none;
+}
+
+header > nav > ul > .nav-link > a {
+    text-decoration: none;
+    margin-right: 20px;
+    color: inherit;
+    margin-bottom: -50px;
+}
+
+header > nav > ul > .nav-link > a:hover {
+    color: var(--link-text-color);
+}
+
+.container {
+    /*  If no margin-bottom around the contanier,
+        use this code :
+        position: relative;
+        top: 90px; 
+    */
+    width: 900px;
+    text-align: center;
+    margin: 100px auto 25px;
+    border: 2px solid var(--border-container-color);
+    border-radius: 5px;
+}
+
+.container > section#how_it_works > iframe {
+    margin: 20px auto 50px;
+    border: 2px dashed rgb(235,60,104);
+}
+
+.container > section#how_it_works > iframe:hover {
+    border-color: rgb(0,231,231);
+}
+
+.container > #form {
+    margin: 0 auto 50px;
+    padding: 10px;
+}
+
+.container > #form > h1 {
+    color: var(--title-text-color);
+}
+
+.container > #form > input#email {
+    width: 350px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-family: inherit;
+    border-radius: 6px;
+}
+
+.container > #form > input#email:focus {
+    box-shadow: 0 0 2.5px 4px rgb(55,175,101);
+}
+
+.container > #form > button#submit {
+    display: block;
+    margin: auto;
+    text-align: center;
+    position: relative;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: inherit;
+    background-color: var(--border-background-color);
+    color: rgb(255,255,255);
+    outline: none;
+    overflow-x: hidden;
+}
+
+.container > #form > button#submit:before {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    width: 1px;
+    height:3px;
+    background-color: var(--border-background-color);
+    border-radius: 6px;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+    -ms-transition: all 1s;
+        transition: all 1s;
+}
+
+.container > #form > button#submit:hover:before {
+    width: 100%;
+    background-color: rgb(50,200,200);
+}
+
+.container > #form > button#submit:focus {
+    outline: 2px solid rgb(50,250,200);
+}
+
+.container > #form > h1, input, button {
+    margin-bottom: 10px;
+}
+
+.container > section#features {
+    margin-bottom: 60px;
+}
+
+.container > section#features > div {
+    text-align: left;
+    max-width: 90%;
+    margin: 0 auto 15px;
+}
+
+.container > section#features > div > i {
+    float: left;
+    text-align: center;
+    width: 100px;
+    height: 50px;
+    margin-top: 3.2%;
+
+}
+
+.container > section#features > div > .description {
+    margin-left: 90px;
+    text-align: left;
+    border: 2px solid var(--border-container-color);
+    padding: 2px;
+    border-radius: 5px;
+}
+
+.container > section#features > div > .description > h2 {
+    background-color: rgb(45,51,59);
+    color: var(--title-text-color);
+    padding-left: 5px;
+}
+
+.container > section#features > div > .description > p {
+    padding-left: 5px;
+    font-size: 14.4px;
+    font-size: 0.9rem;
+}
+
+.container > section#pricing {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 95%;
+    margin: 0 auto 50px;
+    border: 2px solid var(--border-container-color);
+    border-radius: 10px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding: 5px;
+    background-color: var(--header-color);
+}
+
+.container > section#pricing > div {
+    border: 2px solid rgb(144,157,171);
+    border-radius: 4px;
+}
+
+.container > section#pricing > div > h2 {
+    background-color: rgb(45,51,59);
+    color: var(--title-text-color);
+    font-weight: normal;
+    padding: 0 5px;
+    border-bottom: 2px dotted rgb(216, 88, 120);
+}
+
+.container > section#pricing > div > div {
+    background-color: var(--body-color);
+    padding: 3px;
+}
+
+.container > section#pricing > div > div > .button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: bold;
+    background-color: rgb(69, 69, 212);
+    color: rgb(255,255,255);
+}
+
+.container > section#pricing > div > div > .button:hover {
+    background-color: rgb(67, 134, 223);
+}
+
+.container > footer {
+    background-color: #333;
+    padding: 10px;
+}
+
+.container > footer > div {
+    margin-bottom: 10px;
+}
+
+.container > footer > div, .copyright {
+    text-align: right;
+    margin-right: 20px;
+}
+
+.container > footer > div > ul > li {
+    display: inline-block;
+    list-style-type: none;
+    margin-right: 5px;
+}
+
+.container > footer > div > ul > li > a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container > footer > div > ul > li > a:hover {
+    color: rgb(65, 132, 228);
+    text-decoration: overline rgb(235,60,104) 2.5px;
+    /*  param1: text-decoration,
+        param2: text-decoration-color,
+        param3: text-decoration-thickness.
+    */
+}
+
+@media only screen and (max-width: 777px) {
+    .container > section#pricing {
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+        padding: 10px 50px;
+    }
+
+    .container > section#pricing > div {
+        margin-bottom: 10px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .container > #form > input#email {
+        max-width: 80%;
+    }
+
+    .container > section#pricing {
+        padding: 10px 30px;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    .container > section#how_it_works > iframe {
+        max-width: 97%;
+    }
+}
+
+@media only screen and (max-width: 920px) {
+    .container {
+        max-width: 95%;
+    }
+}
+
+@media only screen and (max-width: 660px) {
+    header {
+        height: 90px;
+        overflow-y: hidden;
+    }
+
+    header > nav {
+        float: left;
+        margin-top: 37px;
+    }
+
+    header > .header-div {
+        top: 15px;
+    }
+
+    .container {
+        top: 100px;
+    }
+}

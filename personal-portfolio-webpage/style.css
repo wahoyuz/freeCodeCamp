@@ -1,0 +1,475 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --body-color: rgb(28,30,41);
+    --header-color: rgb(51,53,75);
+    --border-container-color: rgb(68,76,86);
+    --font-face: Poppins, sans-serif;
+    --darker-text-color: rgb(164,177,189);
+    --default-text-color: rgb(173,186,199);
+    --title-text-color: rgb(205,217,229);
+    --link-text-color: rgb(0,231,231);
+}
+
+html {
+    scroll-behavior: smooth; /* For smooth scrolling */
+}
+
+body {
+    font-family: var(--font-face);
+    background-color: var(--body-color);
+    color: var(--default-text-color);
+}
+
+#navbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 75px;
+    padding: 5px 10px;
+    background-color: var(--header-color);
+    z-index: 9999;
+    box-shadow: 0 1px 5px 3px rgb(0,0,0,0.5);
+}
+
+#navbar > .navbar_info {
+    max-height: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+#navbar > .navbar_info > h1 {
+    text-align: left;
+    color: var(--title-text-color);
+    font-size: 1.8rem;
+}
+
+#navbar > .navbar_info > img {
+    border-radius: 6px;
+    margin-right: 10px;
+}
+
+#navbar > ul > li {
+    display: inline-block;
+    list-style-type: none;
+    margin-right: 30px;
+}
+
+#navbar > ul > li:last-child {
+    margin-right: 10px;
+}
+
+#navbar > ul > li:hover, #navbar > ul > li:active {
+    border-top: 2.5px solid rgb(235,60,104);
+    border-radius: 10%;
+}
+
+#navbar > ul > li > a {
+    text-decoration: none;
+    color: var(--title-text-color);
+    font-size: 1.2rem;
+}
+
+#navbar > ul > li > a:hover {
+    color: var(--darker-text-color);
+}
+
+#welcome-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100vh;
+    text-align: center;
+    padding: 10px;
+}
+
+#welcome-section > h1 {
+    font-size: 3rem;
+    color: var(--title-text-color);
+}
+
+#welcome-section > h1:before {
+    content: 'Who am i ? ';
+    color: var(--darker-text-color);
+}
+
+#welcome-section > h2 {
+    color: var(--default-text-color);
+    font-style: italic;
+    font-weight: lighter;
+    font-size: 1.3rem;
+}
+
+#projects {
+    padding: 10px;
+    background-color: rgb(34,39,46);
+}
+
+#projects > #header_projects {
+    margin: 70px auto 10px;
+    text-align: center;
+    font-size: 2.3rem;
+}
+
+#projects > .projects_container > .project-tile > h3 > .code {
+    color: rgb(40, 50, 60);
+    margin: 0 5px;
+    font-family: monospace;
+}
+
+#projects > .projects_container > .project-tile:hover .code {
+    color: rgb(150,155,160);
+}
+
+#projects > .projects_container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(380px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    grid-gap: 15px;
+    margin: auto;
+				padding-top: 10px;
+    text-align: center;
+    width: 100%;
+    max-width: 1280px;
+}
+
+#projects > .projects_container > .project-tile,
+#projects > .projects_container > .project-tile > img,
+#projects > .projects_container > .project_links {
+    width: 400px;
+} 
+
+#projects > .projects_container > .project-tile {
+    height: 500px; /* Full height tile per-projects is 465px */
+    border: 2.5px solid rgb(144, 157, 171);
+    border-radius: 3px;
+    text-align: center;
+    overflow: hidden;
+    margin: auto;
+}
+
+#projects > .projects_container > .project-tile:visited {
+    color: rgb(40, 50, 60);
+}
+
+#projects > .projects_container > .project-tile:hover {
+    border-color: rgb(235,60,104);
+}
+
+#projects > .projects_container > .project-tile:hover h3 {
+    border-top: 2px dashed rgb(0,231,231);
+    border-bottom: 2px dashed rgb(0,231,231);
+}
+
+#projects > .projects_container > .project-tile > img {
+    height: 390px; /* Total height images is 390px */
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
+#projects > .projects_container > .project-tile > h3 {
+    padding: 12px;
+    font-size: 1.2rem;
+    color: var(--title-text-color);
+    background-color: rgb(40, 50, 60);
+    border-top: 2px dashed rgb(145, 150, 158);
+    border-bottom: 2px dashed rgb(145, 150, 158);
+}
+
+#projects > .projects_container > .project-tile > .project_links {
+    display: block; /* default display object elm is inline. So i change to block :) */
+    padding: 10px;
+    background-color: rgb(40, 50, 60);
+}
+
+#projects > .projects_container > .project-tile > h3,
+#projects > .projects_container > .project-tile > .project_links {
+    text-align: center;
+}
+
+/*  Horizontal Overlapping Margin 
+    * margin-right on codepen icon is 15px +
+    * margin-left on github icon is 15px too.
+    * so total margin of both icons is 30px.
+
+    .fa-codepen for codepen icon,
+    .fa-github for github icon.
+*/
+#projects > .projects_container > .project-tile > .project_links > a {
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+#projects > .projects_container > .project-tile > .project_links > a > i {
+    color: rgb(0,0,0);
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+}
+
+#projects > .projects_container > .project-tile > .project_links > a > i:hover {
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
+    color: var(--title-text-color);
+}
+
+#projects > .projects_container > .project-tile > .project_links > a > .fa-codepen:hover {
+    -webkit-transform: translateX(5px);
+            transform: translateX(5px);
+}
+
+#projects > .projects_container > .project-tile > .project_links > a > .fa-github:hover {
+    -webkit-transform: translateX(-5px);
+            transform: translateX(-5px);
+}
+/* -------------------------------------------- */
+
+#projects > #footer_projects {
+    text-align: center;
+    border: 2px solid var(--border-container-color);
+    border-radius: 5px;
+    margin: 10px auto 0;
+    padding: 5px 10px;
+    width: 150px;
+    font-size: 1rem;
+}
+
+#projects > #footer_projects > a {
+    margin-top: 10px;
+    text-decoration: none;
+    color: var(--default-text-color);
+}
+
+#projects > #footer_projects:hover {
+    border-color: rgb(235,60,104);
+}
+
+#projects > #footer_projects:hover a {
+    color:rgb(0,231,231);
+}
+
+#contact {
+    text-align: center;
+    padding: 10px 20px;
+    background-color: rgb(50,60,70);
+}
+
+#contact > h1 {
+    margin: 70px auto 10px;
+    font-size: 2.5rem;
+}
+
+#contact > h2 {
+    font-size: 1.2rem;
+    font-style: italic;
+    margin-bottom: 100px;
+}
+
+#contact > .contact_links > a {
+    margin-right: 15px;
+}
+
+#contact > .contact_links > a > i {
+    border: 1.8px solid var(--border-container-color);
+    border-radius: 20%;
+    color: #262626;
+    background-color: #5d5d5d;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    -webkit-transition: all 0.6s ease;
+    transition: all 0.6s ease;
+}
+
+#contact > .contact_links > a > i:hover {
+    -webkit-transform: translateY(8px);
+            transform: translateY(8px); /* Icons move down for 5px */
+    border-color: rgb(144, 157, 171);
+}
+
+#contact > .contact_links > a > .fa-facebook:hover, .fa-facebook:active {
+    color: rgb(255,255,255);
+    background-color: rgb(59, 89, 152);
+}
+
+#contact > .contact_links > a > .fa-instagram:hover, .fa-instagram:active {
+    color: rgb(199, 18, 108);
+    background-color: rgb(230, 109, 169);
+}
+
+#contact > .contact_links > a > .fa-twitter:hover, .fa-twitter:active {
+    background-color: rgb(85, 172, 238);
+    color: rgb(255,255,255);
+}
+
+#contact > .contact_links > a > .fa-github:hover, .fa-github:active {
+    color: rgb(0,0,0);
+    background-color: rgb(230,230,230);
+}
+
+#contact > .contact_links > a > .fa-linkedin:hover, .fa-linkedin:active {
+    background-color: rgb(0, 131, 190);
+    color: rgb(255,255,255);
+}
+
+#contact > #copyright {
+    padding: 20px;
+    color: var(--darker-text-color);
+    text-align: center;
+    margin-top: 200px;
+    font-size: 0.95rem;
+}
+
+@media only screen and (max-width: 650px) {
+    #navbar > .navbar_info > h1 {
+        -ms-flex-item-align: start;
+            align-self: flex-start;
+        font-size: 1.4rem;
+        margin-top: -8px;
+    }
+
+    #navbar > ul {
+        position: absolute;
+        top: 40px;
+        left: 60px;
+    }
+
+    #navbar > ul > li {
+        margin-right: 20px;
+    }
+
+    #navbar > ul > li > a {
+        font-size: 0.9rem;
+    }
+
+    #navbar > ul > li:hover, #navbar > ul > li:active {
+        border-top: none;
+        border-bottom: 2px solid rgb(235,60,104);
+    }
+}
+
+@media only screen and (max-width: 490px) {
+    #projects > .projects_container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    #welcome-section > h1 {
+        font-size: 2.8rem;
+    }
+
+    #projects > .projects_container > .project-tile > h3 {
+        padding: 15px 5px;
+        font-size: 0.9rem;
+    }
+	
+    #contact > .contact_links > a {
+        margin-right: 5px;
+    }
+
+    #contact > .contact_links > a > i {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+	#projects > .projects_container > .project-tile,
+	#projects > .projects_container > .project-tile > img,
+	#projects > .projects_container > .project_links {
+        width: 100%;
+    }
+	
+	#projects > .projects_container > .project-tile > img {
+		object-fit: fill;
+	}
+}
+
+@media only screen and (max-width: 335px) {
+    #projects > .projects_container > .project-tile > h3 {
+        padding: 16px 5px;
+        font-size: 0.8rem;
+    }
+}
+
+@media only screen and (max-width: 330px) {
+    #projects > #header_projects {
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width: 310px) {
+	#welcome-section > h1 {
+        font-size: 2rem;
+    }
+
+	#welcome-section > h2 {
+        font-size: 1rem;
+    }
+
+	#projects > .projects_container > .project-tile {
+		height: 430px;	
+    }
+	
+	#projects > .projects_container > .project-tile > img {
+		height: 320px;	
+	}
+	
+    #projects > .projects_container > .project-tile > h3 {
+        padding: 16px 5px;
+        font-size: 0.75rem;
+    }
+}
+
+@media only screen and (max-width: 295px) {
+	#navbar > .navbar_info > h1 {
+        font-size: 1.1rem;
+		margin-top: -3px;
+    }
+
+    #navbar > ul > li {
+        margin-right: 5px;
+    }
+	
+    #navbar > ul > li:last-child {
+    margin-right: 0;
+	}
+}
