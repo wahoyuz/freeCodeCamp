@@ -11,8 +11,4 @@
 
 ### `Certificate of Completion`
 ![wahoyuz-fcc-responsive-web-design](https://github.com/wahoyuz/freeCodeCamp/blob/main/wahoyuz-fcc-responsive-web-design.png?raw=true)\
-<<<<<<< HEAD
 [View certificate](https://www.freecodecamp.org/certification/wahyupriambodo/responsive-web-design)
-=======
-[View certificate:](https://www.freecodecamp.org/certification/wahyupriambodo/responsive-web-design)
->>>>>>> 18a3f18ceff03d3e3068086e9536a6baee4e9925
