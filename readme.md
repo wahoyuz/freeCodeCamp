@@ -3,11 +3,11 @@
 
 | No. | Project name |   Solution   |
 | --- | ------------ | ------------ |
-|  1. | **Tribute Page** | [freeCodeCamp/tribute-page](https://wahyupriambodo.github.io/freecodecamp/tribute-page/ "Click to visit.") |
-|  2. | **Survey Form** | [freeCodeCamp/survey-form](https://wahyupriambodo.github.io/freecodecamp/survey-form/ "Click to visit.") |
-|  3. | **Product Landing Page** | [freeCodeCamp/product-landing-page](https://wahyupriambodo.github.io/freecodecamp/product-landing-page/ "Click to visit.") |
-|  4. | **Technical Documentation Page** | [freeCodeCamp/technical-documentation-page](https://wahyupriambodo.github.io/freecodecamp/technical-documentation-page/ "Click to visit.") |
-|  5. | **Personal Portfolio** | [freeCodeCamp/personal-portfolio](https://wahyupriambodo.github.io/freecodecamp/personal-portfolio-webpage/ "Click to visit.") |
+|  1. | **Tribute Page** | [codepen.io/wahyupriambodo/full/gOmZBRb](https://codepen.io/wahyupriambodo/full/gOmZBRb "Click to visit.") |
+|  2. | **Survey Form** | [codepen.io/wahyupriambodo/full/VwpgRzL](https://codepen.io/wahyupriambodo/full/VwpgRzL "Click to visit.") |
+|  3. | **Product Landing Page** | [codepen.io/wahyupriambodo/full/wvJZqVQ](https://codepen.io/wahyupriambodo/full/wvJZqVQ "Click to visit.") |
+|  4. | **Technical Documentation Page** | [codepen.io/wahyupriambodo/full/XWRrjOB](https://codepen.io/wahyupriambodo/full/XWRrjOB "Click to visit.") |
+|  5. | **Personal Portfolio** | [codepen.io/wahyupriambodo/full/WNjbvOj](https://codepen.io/wahyupriambodo/full/WNjbvOj "Click to visit.") |
 
 ### Certificate of Completion
 ![wahoyuz-fcc-responsive-web-design](https://github.com/wahoyuz/freeCodeCamp/blob/main/wahoyuz-fcc-responsive-web-design.png?raw=true)\
