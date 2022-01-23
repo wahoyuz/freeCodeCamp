@@ -1,5 +1,5 @@
 ## `All of My FCC Project Solutions`
-### `Project Link`
+### Project Link
 
 | No. | Project name |   Solution   |
 | --- | ------------ | ------------ |
@@ -9,6 +9,6 @@
 |  4. | **Technical Documentation Page** | [freeCodeCamp/technical-documentation-page](https://wahyupriambodo.github.io/freecodecamp/technical-documentation-page/ "Click to visit.") |
 |  5. | **Personal Portfolio** | [freeCodeCamp/personal-portfolio](https://wahyupriambodo.github.io/freecodecamp/personal-portfolio-webpage/ "Click to visit.") |
 
-### `Certificate of Completion`
+### Certificate of Completion
 ![wahoyuz-fcc-responsive-web-design](https://github.com/wahoyuz/freeCodeCamp/blob/main/wahoyuz-fcc-responsive-web-design.png?raw=true)\
 [View certificate](https://www.freecodecamp.org/certification/wahyupriambodo/responsive-web-design)
