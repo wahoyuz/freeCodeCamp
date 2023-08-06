@@ -9,5 +9,5 @@
 |  5. | **Personal Portfolio** | [codepen.io/wahyu-priambodo/full/WNjbvOj](https://codepen.io/wahyu-priambodo/full/WNjbvOj "Click to visit.") |
 
 ### Certificate of Completion
-![wahoyuz-fcc-responsive-web-design](https://github.com/wahyu-priambodo/freeCodeCamp/blob/main/wahoyuz-fcc-responsive-web-design.png?raw=true)\
+![wahoyuz-fcc-responsive-web-design](https://github.com/wahyu-priambodo/freeCodeCamp/blob/main/fcc-web-responsive-cert.png?raw=true)\
 [View certificate](https://www.freecodecamp.org/certification/wahyu-priambodo/responsive-web-design)
